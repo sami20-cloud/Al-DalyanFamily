@@ -580,7 +580,7 @@
 <script>
 // ===== CONFIG =====
 const ADMIN_PASSWORD = 'cood2024';
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzVGfPZSAxEH9Npbl3FICNQ6mQwOBX_q_QDcKg_uEB06kPi2YI41RUR7UHluc5yhbiV/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyCW9YwDf5priAdJ6ocQ-PY5maoz-IVusmyga_mZvsAUu0WLihT2jrFDede90frFCnG/exec';
 
 // ===== STATE =====
 let familyData = [];
@@ -598,9 +598,9 @@ function applyTheme(t){
 }
 function toggleTheme(){
   const t=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';
-  applyTheme(t); try{ localStorage.setItem('klaib-theme',t); }catch(_){}
+  applyTheme(t); try{ localStorage.setItem('Al-Dalyan-theme',t); }catch(_){}
 }
-(function(){ let t='dark'; try{ t=localStorage.getItem('klaib-theme')||'dark'; }catch(_){}
+(function(){ let t='dark'; try{ t=localStorage.getItem('Al-Dalyan-theme')||'dark'; }catch(_){}
   document.addEventListener('DOMContentLoaded',()=>applyTheme(t)); })();
 
 // ===== LOADING & TOAST =====
